@@ -1,0 +1,131 @@
+Started by user PRASATH D V
+[EnvInject] - Loading node environment variables.
+Building in workspace C:\Users\User\.jenkins\workspace\dtnetfssample04
+Cloning the remote Git repository
+Cloning repository https://github.com/Prasathdv/jenkinsnetdemo.git
+ > git.exe init C:\Users\User\.jenkins\workspace\dtnetfssample04 # timeout=10
+Fetching upstream changes from https://github.com/Prasathdv/jenkinsnetdemo.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/Prasathdv/jenkinsnetdemo.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/Prasathdv/jenkinsnetdemo.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/Prasathdv/jenkinsnetdemo.git # timeout=10
+Fetching upstream changes from https://github.com/Prasathdv/jenkinsnetdemo.git
+ > git.exe fetch --tags --progress https://github.com/Prasathdv/jenkinsnetdemo.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision ba57315fb12695c7d68d55e794366d08c588b6aa (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f ba57315fb12695c7d68d55e794366d08c588b6aa
+Commit message: "added MSBuild.Microsoft.VisualStudio.Web.targets"
+First time build. Skipping changelog.
+[dtnetfssample04] $ cmd /c call C:\Users\User\AppData\Local\Temp\jenkins5370313584895847464.bat
+
+C:\Users\User\.jenkins\workspace\dtnetfssample04>"C:\Nuget\nuget.exe" restore JenkinsCIDemo_Samp1.sln 
+MSBuild auto-detection: using msbuild version '15.7.180.61344' from 'C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\bin'.
+Restoring NuGet package MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3.
+Adding package 'MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3' to folder 'C:\Users\User\.jenkins\workspace\dtnetfssample04\packages'
+Added package 'MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3' to folder 'C:\Users\User\.jenkins\workspace\dtnetfssample04\packages'
+
+NuGet Config files used:
+    C:\Users\User\AppData\Roaming\NuGet\NuGet.Config
+    C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.Offline.config
+
+Feeds used:
+    C:\Users\User\.nuget\packages\
+    https://api.nuget.org/v3/index.json
+    C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+
+Installed:
+    1 package(s) to packages.config projects
+
+C:\Users\User\.jenkins\workspace\dtnetfssample04>exit 0 
+Path To MSBuild.exe: C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe
+Executing the command cmd.exe /C " chcp 1252 & "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe" JenkinsCIDemo_Samp1.sln " && exit %%ERRORLEVEL%% from C:\Users\User\.jenkins\workspace\dtnetfssample04
+[dtnetfssample04] $ cmd.exe /C " chcp 1252 & "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe" JenkinsCIDemo_Samp1.sln " && exit %%ERRORLEVEL%%
+Active code page: 1252
+Microsoft (R) Build Engine version 15.7.180.61344 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 7/22/2018 7:44:35 PM.
+Project "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Debug|Any CPU".
+Project "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1.sln" (1) is building "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\JenkinsCIDemo_Samp1.vbproj" (2) on node 1 (default targets).
+CoreResGen:
+  "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\resgen.exe" /useSourcePath /r:C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ComponentModel.DataAnnotations.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Configuration.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.EnterpriseServices.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.ApplicationServices.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.DynamicData.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Entity.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Extensions.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Services.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll" /compile "My Project\Resources.resx",obj\Debug\JenkinsCIDemo_Samp1.Resources.resources
+  Processing resource file "My Project\Resources.resx" into "obj\Debug\JenkinsCIDemo_Samp1.Resources.resources".
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+  C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Data,System.Linq,System.Xml.Linq,System.Diagnostics,System.Collections.Specialized,System.Configuration,System.Text,System.Text.RegularExpressions,System.Web,System.Web.Caching,System.Web.SessionState,System.Web.Security,System.Web.Profile,System.Web.UI,System.Web.UI.WebControls,System.Web.UI.WebControls.WebParts,System.Web.UI.HtmlControls /optioncompare:Binary /optionexplicit+ /optionstrict:custom /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /optioninfer+ /nostdlib /rootnamespace:JenkinsCIDemo_Samp1 /sdkpath:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1" /highentropyva+ /doc:obj\Debug\JenkinsCIDemo_Samp1.xml /define:"CONFIG=\"Debug\",DEBUG=-1,TRACE=-1,_MyType=\"Custom\",PLATFORM=\"AnyCPU\"" /reference:C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll,"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.ComponentModel.DataAnnotations.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Configuration.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Drawing.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.EnterpriseServices.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.ApplicationServices.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.DynamicData.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Entity.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Extensions.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Web.Services.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll" /debug+ /debug:full /out:obj\Debug\JenkinsCIDemo_Samp1.dll /subsystemversion:6.00 /resource:obj\Debug\JenkinsCIDemo_Samp1.Resources.resources /target:library /utf8output Global.asax.vb JenkinsDemo.aspx.designer.vb JenkinsDemo.aspx.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\MyExtensions\MyWebExtension.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" "C:\Users\User\AppData\Local\Temp\.NETFramework,Version=v4.6.1.AssemblyAttributes.vb"
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" to "bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" to "bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml".
+  Touching "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\obj\Debug\JenkinsCIDemo_Samp1.vbproj.CopyComplete".
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\JenkinsCIDemo_Samp1.dll" to "bin\JenkinsCIDemo_Samp1.dll".
+  JenkinsCIDemo_Samp1 -> C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\JenkinsCIDemo_Samp1.dll
+  Copying file from "obj\Debug\JenkinsCIDemo_Samp1.pdb" to "bin\JenkinsCIDemo_Samp1.pdb".
+  Copying file from "obj\Debug\JenkinsCIDemo_Samp1.xml" to "bin\JenkinsCIDemo_Samp1.xml".
+CopyRoslynCompilerFilesToOutputDirectory:
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\csc.exe" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\csc.exe".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\csc.exe.config" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\csc.exe.config".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\csc.rsp" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\csc.rsp".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\csi.exe" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\csi.exe".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\csi.exe.config" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\csi.exe.config".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\csi.rsp" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\csi.rsp".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.Build.Tasks.CodeAnalysis.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.CodeAnalysis.CSharp.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.CodeAnalysis.CSharp.Scripting.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.CodeAnalysis.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.CodeAnalysis.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.CodeAnalysis.Scripting.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.CodeAnalysis.VisualBasic.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.CSharp.Core.targets" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.CSharp.Core.targets".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.DiaSymReader.Native.amd64.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.DiaSymReader.Native.x86.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.VisualBasic.Core.targets" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.VisualBasic.Core.targets".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\Microsoft.Win32.Primitives.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\Microsoft.Win32.Primitives.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.AppContext.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.AppContext.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Collections.Immutable.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Collections.Immutable.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Console.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Console.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Diagnostics.FileVersionInfo.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Diagnostics.Process.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Diagnostics.Process.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Diagnostics.StackTrace.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Diagnostics.StackTrace.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.IO.Compression.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.IO.Compression.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.IO.FileSystem.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.IO.FileSystem.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.IO.FileSystem.DriveInfo.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.IO.FileSystem.DriveInfo.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.IO.FileSystem.Primitives.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.IO.FileSystem.Primitives.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.IO.Pipes.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.IO.Pipes.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Reflection.Metadata.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Reflection.Metadata.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Security.AccessControl.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Security.AccessControl.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Security.Claims.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Security.Claims.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Security.Cryptography.Algorithms.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Security.Cryptography.Algorithms.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Security.Cryptography.Encoding.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Security.Cryptography.Encoding.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Security.Cryptography.Primitives.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Security.Cryptography.Primitives.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Security.Cryptography.X509Certificates.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Security.Principal.Windows.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Security.Principal.Windows.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Text.Encoding.CodePages.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Text.Encoding.CodePages.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Threading.Thread.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Threading.Thread.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.ValueTuple.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.ValueTuple.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Xml.ReaderWriter.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Xml.ReaderWriter.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Xml.XmlDocument.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Xml.XmlDocument.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Xml.XPath.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Xml.XPath.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\System.Xml.XPath.XDocument.dll" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\System.Xml.XPath.XDocument.dll".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\vbc.exe" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\vbc.exe".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\vbc.exe.config" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\vbc.exe.config".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\vbc.rsp" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\vbc.rsp".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\VBCSCompiler.exe" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\VBCSCompiler.exe".
+  Copying file from "C:\Users\User\.jenkins\workspace\dtnetfssample04\packages\Microsoft.Net.Compilers.2.6.1\build\..\tools\VBCSCompiler.exe.config" to "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\bin\roslyn\VBCSCompiler.exe.config".
+Done Building Project "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1\JenkinsCIDemo_Samp1.vbproj" (default targets).
+Done Building Project "C:\Users\User\.jenkins\workspace\dtnetfssample04\JenkinsCIDemo_Samp1.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:09.28
+Finished: SUCCESS
